@@ -2,7 +2,6 @@ import { OperationType } from "./../../entities/Statement";
 import { CreateStatementUseCase } from "./CreateStatementUseCase";
 import { InMemoryUsersRepository } from "./../../../users/repositories/in-memory/InMemoryUsersRepository";
 import { InMemoryStatementsRepository } from "./../../../statements/repositories/in-memory/InMemoryStatementsRepository";
-import { info } from "console";
 import { CreateStatementError } from "./CreateStatementError";
 
 let userRepositoryInMemory: InMemoryUsersRepository;
