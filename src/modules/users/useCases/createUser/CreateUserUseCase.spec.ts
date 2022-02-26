@@ -32,8 +32,8 @@ describe("Create User", () => {
       password: "123456",
     };
 
+    await userRepositoryInMemory.create(user)
     await expect(async () => {
-      await createUserUseCase.execute(user)
       await createUserUseCase.execute(user)
 
     }).rejects.toEqual(new CreateUserError());
